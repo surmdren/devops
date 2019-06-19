@@ -1,0 +1,5 @@
+---
+- name: Check fs usage
+  hosts: b01aciapp070.ahe.pok.ibm.com
+  roles:
+    - role: check_fs

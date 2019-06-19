@@ -1,0 +1,16 @@
+- name: Check Linux /opt/IBM/cobalt usage
+  command: "df -h /opt/IBM/cobalt"
+  register: result
+  when:
+    - ansible_distribution == 'Linux'
+  
+
+- name: Check AIX /opt/IBM/cobalt usage
+  command: "df -g /opt/IBM/cobalt"
+  register: result
+  when:
+    - ansible_distribution == 'AIX'
+
+- name: Debug
+  debug:
+    msg: "{{ result.stdout_lines }}"
