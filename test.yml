@@ -1,11 +1,11 @@
 ---
 - name: Test
-  hosts: b01aciapp070.ahe.pok.ibm.com
+  hosts: b01zcimq004.pok.ibm.com
   tasks:
      - name: Command
-       command: id
+       command: df -h /opt/IBM/cobalt
        register: myoutput
 
      - name: Debug
        debug:
-          msg: "{{ myoutput.stdout }}"
+          msg: "{{ myoutput.stdout_lines }}"
