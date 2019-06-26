@@ -1,0 +1,5 @@
+---
+- name: Check fs usage
+  hosts: sms
+  roles:
+    - role: check_fs

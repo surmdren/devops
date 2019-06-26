@@ -1,0 +1,21 @@
+- name: Check Linux /opt/IBM/cobalt usage
+  command: "df -h /opt/IBM/cobalt"
+  register: result_sles
+  when:
+    - ansible_distribution == 'SLES'
+
+- name: Debug_sles
+  debug:
+    msg: "{{ result_sles }}"
+  when: result_sles.changed == true
+
+- name: Check AIX /opt/IBM/cobalt usage
+  command: "df -g /opt/IBM/cobalt"
+  register: result_aix
+  when:
+    - ansible_distribution == 'AIX'
+
+- name: Debug_aix
+  debug:
+    msg: "{{ result_aix }}"
+  when: result_aix.changed == true
