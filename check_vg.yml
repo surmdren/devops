@@ -1,0 +1,6 @@
+---
+- name: Check vg optvg usage status
+  hosts: sms
+  become: yes
+  roles:
+  - role: check_vg
