@@ -1,0 +1,9 @@
+---
+- name: Roles
+  hosts: sms
+  gather_facts: false
+  become: yes
+  roles:
+    - check_users
+  vars:
+    user: automate

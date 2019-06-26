@@ -1,0 +1,21 @@
+- name: Check Linux /opt/IBM/cobalt usage
+  shell: /sbin/vgdisplay optvg | grep Free | awk -F "/" '{print $3}'
+  register: result_sles
+  when:
+    - ansible_distribution == 'SLES'
+
+- name: Debug_sles
+  debug:
+    msg: "{{ result_sles }}"
+  when: result_sles.changed == true
+
+- name: Check AIX /opt/IBM/cobalt usage
+  shell: /usr/sbin/lsvg rootvg | grep "FREE PPs:" | awk -F "(" '{print $2}' | awk -F ")" '{print $1}' | awk '{print $1}'
+  register: result_aix
+  when:
+    - ansible_distribution == 'AIX'
+
+- name: Debug_aix
+  debug:
+    msg: "{{ result_aix }}"
+  when: result_aix.changed == true
