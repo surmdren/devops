@@ -1,6 +1,0 @@
-- name: Check whether id exists
-  shell: cat /etc/passwd | grep -i "{{ user }}"
-  register: result
-
-- debug:
-    var: result
