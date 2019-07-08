@@ -1,0 +1,6 @@
+- name: Check automate group
+  hosts: sms
+  become: yes
+  gather_facts: false
+  roles:
+    - check_id

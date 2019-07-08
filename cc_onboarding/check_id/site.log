@@ -1,0 +1,132 @@
+
+PLAY [Check automate group] *******************************************************************************************************
+
+TASK [check_id : Check automate group] ********************************************************************************************
+fatal: [g03acdrdbha013.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.071451", "end": "2019-06-27 09:40:54.129633", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:54.058182", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acddbp001.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.079679", "end": "2019-06-27 09:40:54.159140", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:54.079461", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdnfs001.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.057330", "end": "2019-06-27 09:40:54.387960", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:54.330630", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdnfs002.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.122676", "end": "2019-06-27 09:40:54.459362", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:54.336686", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acddbp002.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.129547", "end": "2019-06-27 09:40:54.849713", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:54.720166", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdrdbha014.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.050070", "end": "2019-06-27 09:41:07.779580", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:07.729510", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas009.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.047074", "end": "2019-06-27 09:41:08.033756", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:07.986682", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas012.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.046253", "end": "2019-06-27 09:41:08.087032", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:08.040779", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas011.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.176405", "end": "2019-06-27 09:41:08.569051", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:08.392646", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas010.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.046668", "end": "2019-06-27 09:41:08.571279", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:08.524611", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas013.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.054388", "end": "2019-06-27 09:41:19.363447", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:19.309059", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03aciproxy003.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.084322", "end": "2019-06-27 08:41:20.783245", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 08:41:20.698923", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03aciproxy002.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.062786", "end": "2019-06-27 08:41:20.718464", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 08:41:20.655678", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03aciproxy001.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.070899", "end": "2019-06-27 08:41:19.854997", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 08:41:19.784098", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03acdwas014.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.054032", "end": "2019-06-27 09:41:21.800991", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:21.746959", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03aciproxy004.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.058520", "end": "2019-06-27 08:41:30.470456", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 08:41:30.411936", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [y03acxproxy001.maint.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.047399", "end": "2019-06-27 09:41:24.848578", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:24.801179", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [y03acxproxy004.maint.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.046505", "end": "2019-06-27 09:40:33.315966", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:33.269461", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [y03acxproxy002.maint.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.048166", "end": "2019-06-27 09:41:24.805136", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:24.756970", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [y03acxproxy003.maint.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.047472", "end": "2019-06-27 09:40:34.171182", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:34.123710", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g01acdrdb011.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.045480", "end": "2019-06-27 13:41:42.151146", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 13:41:42.105666", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g01aciwpr003.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.053802", "end": "2019-06-27 13:41:44.605839", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 13:41:44.552037", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01ciproxy002.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.138304", "end": "2019-06-27 13:41:45.174174", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 13:41:45.035870", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01lciwodm001.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003889", "end": "2019-06-27 09:41:45.341122", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:45.337233", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01aciapp070.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.101855", "end": "2019-06-27 09:41:45.295967", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:45.194112", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01acirdb084.ahe.pok.ibm.com]: FAILED! => {"msg": "Missing sudo password"}
+fatal: [b01aciapp072.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.099791", "end": "2019-06-27 09:41:56.224628", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:41:56.124837", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01acirdb085.ahe.pok.ibm.com]: FAILED! => {"msg": "Missing sudo password"}
+fatal: [b01cxnp14055.gho.pok.ibm.com]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host b01cxnp14055.gho.pok.ibm.com port 22: Connection timed out", "unreachable": true}
+fatal: [b01acimq008.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.097955", "end": "2019-06-27 09:40:44.705298", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:44.607343", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01acimq009.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.044699", "end": "2019-06-27 09:42:06.945372", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:06.900673", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03cxnp07055.gho.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.072540", "end": "2019-06-27 09:42:08.000555", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:07.928015", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765400.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.114393", "end": "2019-06-27 09:42:10.119076", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:10.004683", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765401.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.110239", "end": "2019-06-27 09:42:10.766163", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:10.655924", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765402.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.105304", "end": "2019-06-27 09:42:10.891477", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:10.786173", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765403.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.108456", "end": "2019-06-27 09:42:18.554528", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:18.446072", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765404.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.102830", "end": "2019-06-27 09:42:18.928171", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:18.825341", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765405.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.192420", "end": "2019-06-27 09:40:58.740582", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:40:58.548162", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765408.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.123180", "end": "2019-06-27 09:42:23.096391", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:22.973211", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi13765406.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.101792", "end": "2019-06-27 09:42:23.129292", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:23.027500", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi18666370.ahe.pok.ibm.com]: FAILED! => {"changed": false, "module_stderr": "Shared connection to b01avi18666370.ahe.pok.ibm.com closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+fatal: [b01avi13765409.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.141963", "end": "2019-06-27 09:42:30.912208", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:30.770245", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zcimq005.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003881", "end": "2019-06-27 09:42:34.164174", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:34.160293", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01avi18652570.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.107679", "end": "2019-06-27 13:42:34.575067", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 13:42:34.467388", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zcimq004.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004212", "end": "2019-06-27 09:42:34.620119", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:34.615907", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zcimq005.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004471", "end": "2019-06-27 09:42:41.108377", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:41.103906", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zcimq006.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004936", "end": "2019-06-27 09:42:41.740234", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:41.735298", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g01zcxrdb013.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003223", "end": "2019-06-27 09:42:46.349270", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:46.346047", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g01zcxwas036.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003650", "end": "2019-06-27 09:42:46.863591", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:46.859941", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g01zcxwas035.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004011", "end": "2019-06-27 09:42:46.852752", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:46.848741", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03zcxrdb007.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003980", "end": "2019-06-27 09:42:51.295841", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:51.291861", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03zcxwas088.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004020", "end": "2019-06-27 09:42:52.094936", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:52.090916", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [g03zcxwas089.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002308", "end": "2019-06-27 09:42:56.593541", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:56.591233", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zvi14398350.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002003", "end": "2019-06-27 09:42:58.715850", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:58.713847", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zvi13645001.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002120", "end": "2019-06-27 09:42:59.191135", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:42:59.189015", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zvi13645003.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002793", "end": "2019-06-27 09:43:03.017513", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:03.014720", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b01zvi13645004.ahe.pok.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002056", "end": "2019-06-27 09:43:03.927521", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:03.925465", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zvi13868160.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.004785", "end": "2019-06-27 09:43:08.916151", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:08.911366", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zvi14724770.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.003125", "end": "2019-06-27 09:43:12.386448", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:12.383323", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zvi14724771.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002497", "end": "2019-06-27 09:43:12.893291", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:12.890794", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zvi14724773.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.002417", "end": "2019-06-27 09:43:15.575755", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:15.573338", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+fatal: [b03zvi14724772.ahe.boulder.ibm.com]: FAILED! => {"changed": true, "cmd": "cat /etc/group | grep ^automate", "delta": "0:00:00.172291", "end": "2019-06-27 09:43:32.255043", "msg": "non-zero return code", "rc": 1, "start": "2019-06-27 09:43:32.082752", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+	to retry, use: --limit @/home/ysurmd/ansible/squad/devops/cc_onboarding/check_id/site.retry
+
+PLAY RECAP ************************************************************************************************************************
+b01aciapp070.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01aciapp072.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01acimq008.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01acimq009.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01acirdb084.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01acirdb085.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765400.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765401.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765402.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765403.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765404.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765405.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765406.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765408.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765409.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi18652570.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi18666370.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01ciproxy002.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01cxnp14055.gho.pok.ibm.com : ok=0    changed=0    unreachable=1    failed=0   
+b01lciwodm001.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01zcimq004.pok.ibm.com    : ok=0    changed=0    unreachable=0    failed=1   
+b01zcimq005.pok.ibm.com    : ok=0    changed=0    unreachable=0    failed=1   
+b01zvi13645001.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01zvi13645003.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01zvi13645004.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01zvi14398350.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03aciproxy001.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03aciproxy002.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03aciproxy003.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03aciproxy004.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03cxnp07055.gho.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zcimq005.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zcimq006.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zvi13868160.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zvi14724770.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zvi14724771.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zvi14724772.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b03zvi14724773.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g01acdrdb011.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g01aciwpr003.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g01zcxrdb013.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g01zcxwas035.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g01zcxwas036.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acddbp001.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acddbp002.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdnfs001.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdnfs002.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdrdbha013.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdrdbha014.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas009.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas010.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas011.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas012.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas013.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03acdwas014.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03zcxrdb007.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03zcxwas088.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+g03zcxwas089.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+y03acxproxy001.maint.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+y03acxproxy002.maint.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+y03acxproxy003.maint.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+y03acxproxy004.maint.ahe.boulder.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+

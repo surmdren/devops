@@ -1,0 +1,10 @@
+---
+- name: Check automate group
+  shell: cat /etc/group | grep ^automate
+  register: result
+
+
+- name: Debug
+  debug:
+    msg: "{{ result }} "
+  #when: result_sles.changed == true

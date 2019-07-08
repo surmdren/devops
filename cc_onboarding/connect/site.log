@@ -1,0 +1,412 @@
+
+PLAY [Check CHEF Server] **********************************************************************************************************
+
+TASK [check_chefserver : Check the CHEF Server] ***********************************************************************************
+changed: [g03acdnfs002.ahe.boulder.ibm.com]
+changed: [g03acdrdbha013.ahe.boulder.ibm.com]
+changed: [g03acdnfs001.ahe.boulder.ibm.com]
+changed: [g03acddbp002.ahe.boulder.ibm.com]
+changed: [g03acddbp001.ahe.boulder.ibm.com]
+changed: [g03acdrdbha014.ahe.boulder.ibm.com]
+changed: [g03acdwas012.ahe.boulder.ibm.com]
+changed: [g03acdwas009.ahe.boulder.ibm.com]
+changed: [g03acdwas010.ahe.boulder.ibm.com]
+changed: [g03acdwas011.ahe.boulder.ibm.com]
+changed: [g03acdwas013.ahe.boulder.ibm.com]
+changed: [g03acdwas014.ahe.boulder.ibm.com]
+changed: [b03aciproxy003.ahe.boulder.ibm.com]
+changed: [b03aciproxy001.ahe.boulder.ibm.com]
+changed: [b03aciproxy002.ahe.boulder.ibm.com]
+changed: [b03aciproxy004.ahe.boulder.ibm.com]
+changed: [y03acxproxy001.maint.ahe.boulder.ibm.com]
+changed: [y03acxproxy002.maint.ahe.boulder.ibm.com]
+changed: [y03acxproxy003.maint.ahe.boulder.ibm.com]
+changed: [y03acxproxy004.maint.ahe.boulder.ibm.com]
+changed: [g01acdrdb011.ahe.pok.ibm.com]
+changed: [g01aciwpr003.ahe.pok.ibm.com]
+changed: [b01ciproxy002.ahe.pok.ibm.com]
+changed: [b01lciwodm001.ahe.pok.ibm.com]
+changed: [b01aciapp070.ahe.pok.ibm.com]
+fatal: [b01acirdb084.ahe.pok.ibm.com]: FAILED! => {"msg": "Missing sudo password"}
+fatal: [b01acirdb085.ahe.pok.ibm.com]: FAILED! => {"msg": "Missing sudo password"}
+changed: [b01aciapp072.ahe.pok.ibm.com]
+fatal: [b01cxnp14055.gho.pok.ibm.com]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host b01cxnp14055.gho.pok.ibm.com port 22: Connection timed out", "unreachable": true}
+changed: [b01acimq008.ahe.pok.ibm.com]
+changed: [b03cxnp07055.gho.boulder.ibm.com]
+changed: [b01acimq009.ahe.pok.ibm.com]
+changed: [b01avi13765400.ahe.pok.ibm.com]
+changed: [b01avi13765401.ahe.pok.ibm.com]
+changed: [b01avi13765402.ahe.pok.ibm.com]
+changed: [b01avi13765403.ahe.pok.ibm.com]
+changed: [b01avi13765405.ahe.pok.ibm.com]
+changed: [b01avi13765404.ahe.pok.ibm.com]
+changed: [b01avi13765406.ahe.pok.ibm.com]
+changed: [b01avi13765408.ahe.pok.ibm.com]
+changed: [b01avi13765409.ahe.pok.ibm.com]
+fatal: [b01avi18666370.ahe.pok.ibm.com]: FAILED! => {"changed": false, "module_stderr": "Shared connection to b01avi18666370.ahe.pok.ibm.com closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+changed: [b01avi18652570.ahe.pok.ibm.com]
+changed: [b01zcimq004.pok.ibm.com]
+changed: [b01zcimq005.pok.ibm.com]
+changed: [b03zcimq005.boulder.ibm.com]
+changed: [b03zcimq006.boulder.ibm.com]
+changed: [g01zcxrdb013.ahe.pok.ibm.com]
+changed: [g03zcxrdb007.ahe.boulder.ibm.com]
+changed: [g01zcxwas036.ahe.pok.ibm.com]
+changed: [g01zcxwas035.ahe.pok.ibm.com]
+changed: [g03zcxwas088.ahe.boulder.ibm.com]
+changed: [g03zcxwas089.ahe.boulder.ibm.com]
+changed: [b01zvi13645001.ahe.pok.ibm.com]
+changed: [b01zvi14398350.ahe.pok.ibm.com]
+changed: [b03zvi13868160.ahe.boulder.ibm.com]
+changed: [b01zvi13645003.ahe.pok.ibm.com]
+changed: [b01zvi13645004.ahe.pok.ibm.com]
+changed: [b03zvi14724770.ahe.boulder.ibm.com]
+changed: [b03zvi14724771.ahe.boulder.ibm.com]
+changed: [b03zvi14724773.ahe.boulder.ibm.com]
+changed: [b03zvi14724772.ahe.boulder.ibm.com]
+
+TASK [check_chefserver : Debug] ***************************************************************************************************
+ok: [g03acddbp001.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acddbp002.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdnfs002.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdrdbha013.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdnfs001.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdrdbha014.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas009.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas010.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas011.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas012.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas013.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03acdwas014.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03aciproxy001.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03aciproxy002.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03aciproxy003.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03aciproxy004.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [y03acxproxy001.maint.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [y03acxproxy002.maint.ahe.boulder.ibm.com] => {
+    "msg": []
+}
+ok: [y03acxproxy003.maint.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [y03acxproxy004.maint.ahe.boulder.ibm.com] => {
+    "msg": []
+}
+ok: [g01acdrdb011.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g01aciwpr003.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01ciproxy002.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01lciwodm001.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01aciapp070.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01aciapp072.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01acimq008.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01acimq009.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03cxnp07055.gho.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765400.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765401.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765402.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765404.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765403.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765405.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765406.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765408.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi13765409.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01avi18652570.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01zcimq004.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01zcimq005.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zcimq005.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zcimq006.boulder.ibm.com] => {
+    "msg": []
+}
+ok: [g01zcxrdb013.ahe.pok.ibm.com] => {
+    "msg": []
+}
+ok: [g01zcxwas035.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g01zcxwas036.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03zcxrdb007.ahe.boulder.ibm.com] => {
+    "msg": []
+}
+ok: [g03zcxwas088.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [g03zcxwas089.ahe.boulder.ibm.com] => {
+    "msg": []
+}
+ok: [b01zvi13645001.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01zvi14398350.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01zvi13645003.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b01zvi13645004.ahe.pok.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zvi13868160.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zvi14724770.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zvi14724771.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zvi14724772.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+ok: [b03zvi14724773.ahe.boulder.ibm.com] => {
+    "msg": [
+        "b03leiicoar005.ahe.boulder.ibm.com"
+    ]
+}
+	to retry, use: --limit @/home/ysurmd/ansible/squad/devops/cc_onboarding/connect/site.retry
+
+PLAY RECAP ************************************************************************************************************************
+b01aciapp070.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01aciapp072.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01acimq008.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01acimq009.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01acirdb084.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01acirdb085.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01avi13765400.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765401.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765402.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765403.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765404.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765405.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765406.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765408.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi13765409.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi18652570.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01avi18666370.ahe.pok.ibm.com : ok=0    changed=0    unreachable=0    failed=1   
+b01ciproxy002.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01cxnp14055.gho.pok.ibm.com : ok=0    changed=0    unreachable=1    failed=0   
+b01lciwodm001.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01zcimq004.pok.ibm.com    : ok=2    changed=1    unreachable=0    failed=0   
+b01zcimq005.pok.ibm.com    : ok=2    changed=1    unreachable=0    failed=0   
+b01zvi13645001.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01zvi13645003.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01zvi13645004.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b01zvi14398350.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03aciproxy001.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03aciproxy002.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03aciproxy003.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03aciproxy004.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03cxnp07055.gho.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zcimq005.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zcimq006.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zvi13868160.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zvi14724770.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zvi14724771.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zvi14724772.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+b03zvi14724773.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g01acdrdb011.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g01aciwpr003.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g01zcxrdb013.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g01zcxwas035.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g01zcxwas036.ahe.pok.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acddbp001.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acddbp002.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdnfs001.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdnfs002.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdrdbha013.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdrdbha014.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas009.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas010.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas011.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas012.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas013.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03acdwas014.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03zcxrdb007.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03zcxwas088.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+g03zcxwas089.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+y03acxproxy001.maint.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+y03acxproxy002.maint.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+y03acxproxy003.maint.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+y03acxproxy004.maint.ahe.boulder.ibm.com : ok=2    changed=1    unreachable=0    failed=0   
+

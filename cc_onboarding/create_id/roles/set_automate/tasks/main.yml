@@ -1,0 +1,52 @@
+- name: Set Linux automate id non-expiring password
+  command: chage -I -1 -m 0 -M 99999 -E -1 automate
+  register: result_sles
+  when:
+    - ansible_distribution == 'SLES' or ansible_distribution == 'CentOS'
+
+- name: Debug_sles
+  debug:
+    msg: "{{ result_sles }}"
+  when: result_sles.changed == true
+
+- name: Set AIX automate id non-expiring password
+  command: chuser maxage=0 automate
+  register: result_aix
+  when:
+    - ansible_distribution == 'AIX'
+
+- name: Debug_aix
+  debug:
+    msg: "{{ result_aix }}"
+  when: result_aix.changed == true
+
+- name: Create .ssh directory
+  file: 
+    path: /home/automate/.ssh
+    owner: automate
+    group: igachef
+    mode: '700'
+    state: directory
+  register: result_ssh
+
+- name: Debug_sles_ssh
+  debug:
+    msg: "{{ result_ssh }}"
+  when: result_ssh.changed == true
+
+- name: Create authorized_keys 
+  file: 
+    path: /home/automate/.ssh/authorized_keys
+    owner: automate
+    group: igachef
+    mode: '0600'
+    state: touch
+  register: result_keys
+
+- name: Debug_aix_keys
+  debug:
+    msg: "{{ result_keys }}"
+  when: result_keys.changed == true
+
+- name: Place the public key in the authorized keys file ".ssh/authorized_keys" for the "automate" user.
+  shell: echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCl0hqLt/la8Jy4DkgTXlxgY9inCuRvy8W3S5Mi6R25hXYTWUSNx5aBeQIZCEnaepVL/Q7WlMc2SDs65W1Xzx5ELNbe9ZNEYsrtNkaAY8r2mwRrXfEG/d9ZDQuimcJXmv2EMw+BqfSclVhAYjpfI4bprD6+NVLMrz3TlE0CaluecWPSViVvGLaJcZRG6bPfo2KhQuy9kE9RZ3Zj0hsyWEbRl10iHYG+84qtVz7gNh4/KJBR0e+P9o6tSVAyWQL8UDJHSo7GadljjZlFiGyP9Gc9Y/xbdVCPOwe+I6juy+9pNFMfhu/AZgQBZWjpl8UJ2jDz8Cst3HcB425KlJPHVyD7 ysurmd@ctrl.example.com' >> /home/automate/.ssh/authorized_keys

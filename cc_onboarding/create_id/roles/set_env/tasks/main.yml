@@ -1,0 +1,27 @@
+- name: Copy sshd_cmd_logger file to /home/automate/.ssh
+  copy:
+    src: /tmp/ansible/sshd_cmd_logger
+    dest: /home/automate/.ssh/
+    owner: automate
+    group: igachef
+    mode: '750'
+  register: result_sshd
+
+- name: Debug_sshd
+  debug:
+    msg: "{{ result_sles }}"
+  when: result_sshd.changed == true
+
+- name: Create a directory /var/log/hist
+  file:
+    path: /var/log/hist
+    owner: automate
+    group: igachef
+    state: directory
+    mode: '1777'
+
+- name: Grant the automate user sudo access
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    line: 'automate ALL=(ALL) NOPASSWD: ALL'

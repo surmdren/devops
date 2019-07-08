@@ -1,0 +1,8 @@
+- name: Check Chef Server port
+  command: telnet b03leiicoar005.ahe.boulder.ibm.com 443
+  register: result
+
+- name: Debug
+  debug:
+    msg: "{{ result.stdout_lines }}"
+
