@@ -1,0 +1,8 @@
+- name: /etc/sudoers.d/987_OS_SA_BAU_LCL
+  lineinfile:
+    path: /etc/sudoers.d/987_OS_SA_BAU_LCL
+    state: present
+    backup: yes
+    regexp: '^LCL_OS_SA_BAU'
+    line: 'LCL_OS_SA_BAU  LCL_OS_HOSTS = (ALL) NOPASSWD: /usr/bin/su -, /bin/su -, /usr/bin/sh *, /bin/sh *'
+    validate: /usr/sbin/visudo -cf %s

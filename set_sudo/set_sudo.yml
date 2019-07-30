@@ -1,0 +1,6 @@
+- name: Update /etc/sudoers.d/987_OS_SA_BAU_LCL
+  hosts: set_sudo
+  become: yes
+  gather_facts: false
+  roles:
+    - set_sudo
